@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 
-const ItemListContainer = ({greeting}) => {
+export const ItemListContainer = ({products}) => {
     return(
       <Box
         width={"100vh"}
@@ -9,9 +9,7 @@ const ItemListContainer = ({greeting}) => {
         alignItems={"center"}
         justifyContent={"center"}
        >
-        {greeting}
+        {products}
        </Box>
     );
 };
-
-export default ItemListContainer;

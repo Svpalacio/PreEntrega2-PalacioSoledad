@@ -15,9 +15,8 @@ import {
   } from '@chakra-ui/react'
   import { MoonIcon, SunIcon } from '@chakra-ui/icons';
   import myImage from '/src/assets/logo.jpeg';
-  import CartWidget from '../CartWidget/CartWidget';
-  
-const NavBar = ()=>{
+  import {CartWidget} from '../CartWidget';
+export const NavBar = ()=>{
     const { colorMode, toggleColorMode } = useColorMode()
     return(
         <>
@@ -72,5 +71,3 @@ const NavBar = ()=>{
       </>
     )
 }
-
-export default NavBar;
